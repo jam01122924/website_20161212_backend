@@ -1,0 +1,15 @@
+[
+  {
+    "model": "character.Talent",
+    "pk": 1,
+    "fields": {
+      "strength": 7,
+      "perception": 2,
+      "endurance": 5,
+      "charisma": 1,
+      "intelligence": 4,
+      "agility": 4,
+      "luck": 2
+    }
+  },
+]
