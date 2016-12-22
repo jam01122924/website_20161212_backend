@@ -1,8 +1,9 @@
 from django.contrib.auth.models import User
 from django.db.models import Q
-from rest_framework import viewsets
+from rest_framework import viewsets, generics
 from rest_framework.response import Response
 
+from django_filters.rest_framework import DjangoFilterBackend
 from character.models import *
 from character.serializers import *
 from userInfo.permissions import OnlyAdminOrReadOnly, OnlyAdminOrOwner
@@ -55,6 +56,19 @@ class TalentViewSet(viewsets.ModelViewSet):
     serializer_class = TalentSerializer
     permission_classes = (OnlyAdminOrReadOnly,)
 
+
+class SkillViewSet(viewsets.ModelViewSet):
+    queryset = Skill.objects.all()
+    serializer_class = SkillSerializer
+    permission_classes = (OnlyAdminOrReadOnly,)
+    filter_backends = (DjangoFilterBackend,)
+
+    def get_queryset(self):
+        queryset = Skill.objects.all()
+        lv = self.request.query_params.get('requiredLv', None)
+        if lv is not None:
+            queryset = Skill.objects.filter(requiredLv__lte=lv)
+        return queryset
 
 class EffectViewSet(viewsets.ModelViewSet):
     queryset = Effect.objects.all()

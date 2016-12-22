@@ -94,13 +94,97 @@
 
 
 
+
+  {
+    "model": "character.Talent",
+    "pk": 1,
+    "fields": {
+      "name": "Strong Carrier",
+      "description": "The bag is always too small for you. +30kg carry weight",
+      "field": "carry_weight_buff",
+      "value": 30,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Talent",
+    "pk": 2,
+    "fields": {
+      "name": "Chef Recommended",
+      "description": "You have a talent in cooking. You get 20% more benefit from food",
+      "field": "food_buff",
+      "value": 0.2,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Talent",
+    "pk": 3,
+    "fields": {
+      "name": "Fast Sleeper",
+      "description": "1 Mississippi 2 Mississippi 3 Mississzzzzzzzz... You recover 20% faster from sleep",
+      "field": "sleep_buff",
+      "value": 0.2,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Talent",
+    "pk": 4,
+    "fields": {
+      "name": "Cruel Bargainer",
+      "description": "You always can take advantages from buy and sale. You gain 10% coins from selling stuff.",
+      "field": "sale_buff",
+      "value": 0.1,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Talent",
+    "pk": 5,
+    "fields": {
+      "name": "Hacker",
+      "description": "Hack into the National Food Storage System? 1, 2, 3, and done! You gain 20% more chance to successfully hack into any computer system.",
+      "field": "hack_buff",
+      "value": 0.2,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Talent",
+    "pk": 6,
+    "fields": {
+      "name": "Cat Reflexes",
+      "description": "You move fast like a cat! You gain 5% more chance to dodge attacks.",
+      "field": "dodge_buff",
+      "value": 5,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Talent",
+    "pk": 7,
+    "fields": {
+      "name": "Lucky shoot",
+      "description": "I didn't mean to, but it just happened! You gain 5% more chance to do a critical hit.",
+      "field": "critical_buff",
+      "value": 5,
+      "type": "plus"
+    }
+  },
+
+
+
+
+
   {
     "model": "character.OldJob",
     "pk": 1,
     "fields": {
       "name": "Construction Worker",
       "description": "Working in the construction sites makes you stronger. You can beat others easily in a melee fight. And you can carry more weight with you.",
-      "attributes": 1
+      "attributes": 1,
+      "talent": 1
     }
   },
   {
@@ -109,7 +193,8 @@
     "fields": {
       "name": "Waiter/Waitress",
       "description": "Serving so many coffees and dishes makes you move more accurate. And you can prepare food better than others.",
-      "attributes": 2
+      "attributes": 2,
+      "talent": 2
     }
   },
   {
@@ -118,7 +203,8 @@
     "fields": {
       "name": "Office Worker",
       "description": "Comparing to endless overtime work, sleeping 6 hours a day in the wild is not that exhausting for you. You have better stamina than others, and you don't sleep that much",
-      "attributes": 3
+      "attributes": 3,
+      "talent": 3
     }
   },
   {
@@ -126,8 +212,9 @@
     "pk": 4,
     "fields": {
       "name": "Salesman",
-      "description": "It is a talent for you to easily make conversation with anyone. People tend to like you, and you get advantages on both purchase and sale items.",
-      "attributes": 4
+      "description": "It is a talent for you to easily sale anything to anyone, even water near a river. You get advantages on sale items.",
+      "attributes": 4,
+      "talent": 4
     }
   },
   {
@@ -136,7 +223,8 @@
     "fields": {
       "name": "Programmer",
       "description": "You gotta be smart and well educated to be a good programmer. You learn things faster than others. And you have a better chance when hacking any computer system.",
-      "attributes": 5
+      "attributes": 5,
+      "talent": 5
     }
   },
   {
@@ -145,7 +233,8 @@
     "fields": {
       "name": "Basketball Player",
       "description": "You keep practicing basketball everyday. Now it pays you back. You move faster than others, and your fake moves make it easier to dodge attacks in a fight.",
-      "attributes": 6
+      "attributes": 6,
+      "talent": 6
     }
   },
   {
@@ -153,8 +242,9 @@
     "pk": 7,
     "fields": {
       "name": "Gambler",
-      "description": "Fate smiles on you. You can sense it with your nose, while other people think you are just in luck. You are more likely to win in any gambling",
-      "attributes": 7
+      "description": "Fate smiles on you. You can sense it with your nose, while other people think you are just in luck. You are more likely to do a critical hit in fights!",
+      "attributes": 7,
+      "talent": 7
     }
   }
 ]

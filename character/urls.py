@@ -60,6 +60,7 @@ router.register(r'character', views.CharacterViewSet)
 router.register(r'attributes', views.AttributesViewSet)
 router.register(r'oldjob', views.OldJobViewSet)
 router.register(r'talent', views.TalentViewSet)
+router.register(r'skill', views.SkillViewSet)
 router.register(r'effect', views.EffectViewSet)
 router.register(r'users', views.UserViewSet)
 
@@ -72,6 +73,7 @@ routeList = (
     (r'attributes', views.AttributesViewSet),
     (r'oldjob', views.OldJobViewSet),
     (r'talent', views.TalentViewSet),
+    (r'skill', views.SkillViewSet),
     (r'effect', views.EffectViewSet),
     (r'users', views.UserViewSet),
 )

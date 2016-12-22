@@ -1,0 +1,305 @@
+[
+  {
+    "model": "character.Effect",
+    "pk": 1,
+    "fields": {
+      "id": "Talent_0001",
+      "field": "carry_weight_buff",
+      "value": 10,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 2,
+    "fields": {
+      "id": "Talent_0002",
+      "field": "food_buff",
+      "value": 0.2,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 3,
+    "fields": {
+      "id": "Talent_0003",
+      "field": "sleep_buff",
+      "value": 0.2,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 4,
+    "fields": {
+      "id": "Talent_0004",
+      "field": "sale_buff",
+      "value": 0.1,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 5,
+    "fields": {
+      "id": "Talent_0005",
+      "field": "hack_buff",
+      "value": 0.2,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 6,
+    "fields": {
+      "id": "Talent_0006",
+      "field": "dodge_buff",
+      "value": 5,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 7,
+    "fields": {
+      "id": "Talent_0007",
+      "field": "critical_buff",
+      "value": 5,
+      "type": "plus"
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "model": "character.Effect",
+    "pk": 10001,
+    "fields": {
+      "id": "Skill_0001_1_Level_1",
+      "field": "melee_weapon_dmg_buff",
+      "value": 0.25,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10002,
+    "fields": {
+      "id": "Skill_0001_2_Level_1",
+      "field": "melee_weapon_hitRate_buff",
+      "value": 0.1,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10003,
+    "fields": {
+      "id": "Skill_0001_1_Level_2",
+      "field": "melee_weapon_dmg_buff",
+      "value": 0.5,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10004,
+    "fields": {
+      "id": "Skill_0001_2_Level_2",
+      "field": "melee_weapon_hitRate_buff",
+      "value": 0.2,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10005,
+    "fields": {
+      "id": "Skill_0001_1_Level_3",
+      "field": "melee_weapon_dmg_buff",
+      "value": 0.75,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10006,
+    "fields": {
+      "id": "Skill_0001_2_Level_3",
+      "field": "melee_weapon_hitRate_buff",
+      "value": 0.3,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10007,
+    "fields": {
+      "id": "Skill_0001_1_Level_4",
+      "field": "melee_weapon_dmg_buff",
+      "value": 1,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10008,
+    "fields": {
+      "id": "Skill_0001_2_Level_4",
+      "field": "melee_weapon_hitRate_buff",
+      "value": 0.4,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10009,
+    "fields": {
+      "id": "Skill_0001_1_Level_5",
+      "field": "melee_weapon_dmg_buff",
+      "value": 1.2,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10010,
+    "fields": {
+      "id": "Skill_0001_2_Level_5",
+      "field": "melee_weapon_hitRate_buff",
+      "value": 0.5,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10011,
+    "fields": {
+      "id": "Skill_0001_3_Level_1",
+      "field": "melee_weapon_hitTimes_buff",
+      "value": 0.2,
+      "type": "plus"
+    }
+  },
+
+
+
+  {
+    "model": "character.Effect",
+    "pk": 10021,
+    "fields": {
+      "id": "Skill_0002_1_Level_1",
+      "field": "range_weapon_dmg_buff",
+      "value": 0.25,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10022,
+    "fields": {
+      "id": "Skill_0002_2_Level_1",
+      "field": "range_weapon_hitRate_buff",
+      "value": 0.1,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10023,
+    "fields": {
+      "id": "Skill_0002_1_Level_2",
+      "field": "range_weapon_dmg_buff",
+      "value": 0.5,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10024,
+    "fields": {
+      "id": "Skill_0002_2_Level_2",
+      "field": "range_weapon_hitRate_buff",
+      "value": 0.2,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10025,
+    "fields": {
+      "id": "Skill_0002_1_Level_3",
+      "field": "range_weapon_dmg_buff",
+      "value": 0.75,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10026,
+    "fields": {
+      "id": "Skill_0002_2_Level_3",
+      "field": "range_weapon_hitRate_buff",
+      "value": 0.3,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10027,
+    "fields": {
+      "id": "Skill_0002_1_Level_4",
+      "field": "range_weapon_dmg_buff",
+      "value": 1,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10028,
+    "fields": {
+      "id": "Skill_0002_2_Level_4",
+      "field": "range_weapon_hitRate_buff",
+      "value": 0.4,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10029,
+    "fields": {
+      "id": "Skill_0002_1_Level_5",
+      "field": "range_weapon_dmg_buff",
+      "value": 1.2,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10030,
+    "fields": {
+      "id": "Skill_0002_2_Level_5",
+      "field": "range_weapon_hitRate_buff",
+      "value": 0.5,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10031,
+    "fields": {
+      "id": "Skill_0002_3_Level_1",
+      "field": "range_weapon_hitTimes_buff",
+      "value": 0.2,
+      "type": "plus"
+    }
+  }
+]

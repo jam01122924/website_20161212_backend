@@ -3,13 +3,63 @@
     "model": "character.Talent",
     "pk": 1,
     "fields": {
-      "strength": 7,
-      "perception": 2,
-      "endurance": 5,
-      "charisma": 1,
-      "intelligence": 4,
-      "agility": 4,
-      "luck": 2
+      "name": "Strong Carrier",
+      "description": "The bag is always too small for you. +30kg carry weight",
+      "effect": ["Talent_0001"]
     }
   },
+  {
+    "model": "character.Talent",
+    "pk": 2,
+    "fields": {
+      "name": "Chef Recommended",
+      "description": "You have a talent in cooking. You get 20% more benefit from food",
+      "effect": ["Talent_0002"]
+    }
+  },
+  {
+    "model": "character.Talent",
+    "pk": 3,
+    "fields": {
+      "name": "Fast Sleeper",
+      "description": "1 Mississippi 2 Mississippi 3 Mississzzzzzzzz... You recover 20% faster from sleep",
+      "effect": ["Talent_0003"]
+    }
+  },
+  {
+    "model": "character.Talent",
+    "pk": 4,
+    "fields": {
+      "name": "Cruel Bargainer",
+      "description": "You always can take advantages from buy and sale. You gain 10% coins from selling stuff.",
+      "effect": ["Talent_0004"]
+    }
+  },
+  {
+    "model": "character.Talent",
+    "pk": 5,
+    "fields": {
+      "name": "Hacker",
+      "description": "Hack into the National Food Storage System? 1, 2, 3, and done! You gain 20% more chance to successfully hack into any computer system.",
+      "effect": ["Talent_0005"]
+    }
+  },
+  {
+    "model": "character.Talent",
+    "pk": 6,
+    "fields": {
+      "name": "Cat Reflexes",
+      "description": "You move fast like a cat! You gain 5% more chance to dodge attacks.",
+      "effect": ["Talent_0006"]
+    }
+  },
+  {
+    "model": "character.Talent",
+    "pk": 7,
+    "fields": {
+      "name": "Lucky shoot",
+      "description": "I didn't mean to, but it just happened! You gain 5% more chance to do a critical hit.",
+      "effect": ["Talent_0007"]
+    }
+  }
 ]
