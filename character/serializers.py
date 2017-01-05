@@ -8,13 +8,13 @@ class CharacterSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Character
-        fields = ('id', 'created', 'name', 'sex', 'oldJob', 'talent', 'owner')
+        fields = ('id', 'created', 'name', 'sex', 'oldJob', 'talent', 'attributes', 'owner')
 
 
 class AttributesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Attributes
-        fields = ('strength', 'perception', 'endurance', 'charisma', 'intelligence', 'agility', 'luck')
+        fields = ('id', 'strength', 'perception', 'endurance', 'charisma', 'intelligence', 'agility', 'luck')
 
 
 class EffectSerializer(serializers.ModelSerializer):
@@ -27,7 +27,7 @@ class TalentSerializer(serializers.ModelSerializer):
     effect = EffectSerializer(read_only=True, many=True)
     class Meta:
         model = Talent
-        fields = ('name', 'description', 'effect')
+        fields = ('id', 'name', 'description', 'effect')
 
 
 class RequiredSkillSerializer(serializers.ModelSerializer):
@@ -51,7 +51,7 @@ class OldJobSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = OldJob
-        fields = ('name', 'description', 'talent', 'attributes')
+        fields = ('id', 'name', 'description', 'talent', 'attributes')
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
