@@ -11,27 +11,27 @@ class CharacterSerializer(serializers.ModelSerializer):
         fields = ('id', 'created', 'name', 'sex', 'oldJob', 'talent', 'skill', 'attributes', 'owner')
         read_only_fields = ('owner',)
 
-    def create(self, validated_data):
-        print validated_data
-        character = Character(talent=validated_data['talent'],
-                            name=validated_data['name'],
-                            sex=validated_data['sex'],
-                            skill=validated_data['skill'],
-                            oldJob=validated_data['oldJob'])
-        character.save()
-        # attributes = Attributes(strength=validated_data['attributes'].strength,
-        #                         perception=validated_data['attributes'].perception,
-        #                         endurance=validated_data['attributes'].endurance,
-        #                         charisma=validated_data['attributes'].charisma,
-        #                         intelligence=validated_data['attributes'].intelligence,
-        #                         agility=validated_data['attributes'].agility,
-        #                         luck=validated_data['attributes'].luck)
-        # print character
-        # print attributes
-        # attributes.save()
-        # character.attributes = attributes
-        # character.save()
-        return character
+    # def create(self, validated_data):
+    #     print validated_data
+    #     character = Character(talent=validated_data['talent'],
+    #                         name=validated_data['name'],
+    #                         sex=validated_data['sex'],
+    #                         skill=validated_data['skill'],
+    #                         oldJob=validated_data['oldJob'])
+    #     character.save()
+    #     # attributes = Attributes(strength=validated_data['attributes'].strength,
+    #     #                         perception=validated_data['attributes'].perception,
+    #     #                         endurance=validated_data['attributes'].endurance,
+    #     #                         charisma=validated_data['attributes'].charisma,
+    #     #                         intelligence=validated_data['attributes'].intelligence,
+    #     #                         agility=validated_data['attributes'].agility,
+    #     #                         luck=validated_data['attributes'].luck)
+    #     # print character
+    #     # print attributes
+    #     # attributes.save()
+    #     # character.attributes = attributes
+    #     # character.save()
+    #     return character
 
 
 #
