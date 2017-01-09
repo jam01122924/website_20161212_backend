@@ -13,7 +13,7 @@ from userInfo.permissions import OnlyAdminOrReadOnly, OnlyAdminOrOwner
 class CharacterViewSet(viewsets.ModelViewSet):
     queryset = Character.objects.all()
     serializer_class = CharacterSerializer
-    permission_classes = (OnlyAdminOrOwner,)
+    # permission_classes = (OnlyAdminOrOwner,)
 
     def list(self, request):
         if request.user.is_anonymous():

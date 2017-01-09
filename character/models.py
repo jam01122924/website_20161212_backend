@@ -10,6 +10,7 @@ class Character(models.Model):
     SEX_CHOICE = (('M', 'Male'), ('F', 'Female'))
     sex = models.CharField(max_length=1, choices=SEX_CHOICE, default='M')
     talent = models.ManyToManyField('Talent')
+    skill = models.ManyToManyField('Skill')
     attributes = models.OneToOneField('Attributes', null=True, on_delete=models.CASCADE)
     oldJob = models.ForeignKey('OldJob', null=True, on_delete=models.CASCADE)
 
@@ -55,4 +56,3 @@ class Skill(models.Model):
     requiredLv = models.IntegerField(default=1)
     requiredSkill = models.ManyToManyField('Skill')
     effect = models.ManyToManyField('Effect')
-
