@@ -12,6 +12,7 @@ class Character(models.Model):
     talent = models.ManyToManyField('Talent')
     skill = models.ManyToManyField('Skill')
     attributes = models.OneToOneField('Attributes', null=True, on_delete=models.CASCADE)
+    status = models.OneToOneField('Status', null=True, on_delete=models.CASCADE)
     oldJob = models.ForeignKey('OldJob', null=True, on_delete=models.CASCADE)
 
     owner = models.ForeignKey('auth.User', related_name='character', on_delete=models.CASCADE)
@@ -56,3 +57,42 @@ class Skill(models.Model):
     requiredLv = models.IntegerField(default=1)
     requiredSkill = models.ManyToManyField('Skill')
     effect = models.ManyToManyField('Effect')
+
+
+class Status(models.Model):
+    hp = models.IntegerField(default=0)
+    max_hp = models.IntegerField(default=0)
+    ap = models.IntegerField(default=0)
+    max_ap = models.IntegerField(default=0)
+    weight = models.FloatField(default=0.0)
+    weight_max = models.FloatField(default=0.0)
+    stamina = models.IntegerField(default=0)
+    max_stamina = models.IntegerField(default=0)
+    skillPoint = models.IntegerField(default=0)
+    exp = models.IntegerField(default=0)
+    lv = models.IntegerField(default=0)
+
+    dodge_rate = models.FloatField(default=0.0)
+    hit_rate = models.FloatField(default=0.0)
+    crt_rate = models.FloatField(default=0.0)
+    crt_dmg = models.FloatField(default=0.0)
+
+    hunger = models.FloatField(default=0.0)
+    thirst = models.FloatField(default=0.0)
+    health = models.FloatField(default=0.0)
+
+    melee_dmg = models.IntegerField(default=0.0)
+    range_dmg = models.IntegerField(default=0.0)
+    energy_dmg = models.IntegerField(default=0.0)
+
+    persuade_rate = models.FloatField(default=0.0)
+    food_need = models.FloatField(default=0.0)
+    water_need = models.FloatField(default=0.0)
+    rest_rate = models.FloatField(default=0.0)
+    recover_rate = models.FloatField(default=0.0)
+
+    fire_resist = models.FloatField(default=0.0)
+    cold_resist = models.FloatField(default=0.0)
+    energy_resist = models.FloatField(default=0.0)
+    poison_resist = models.FloatField(default=0.0)
+    radiation_resist = models.FloatField(default=0.0)

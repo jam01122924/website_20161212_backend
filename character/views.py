@@ -70,6 +70,13 @@ class SkillViewSet(viewsets.ModelViewSet):
             queryset = Skill.objects.filter(requiredLv__lte=lv)
         return queryset
 
+
+class StatusViewSet(viewsets.ModelViewSet):
+    queryset = Status.objects.all()
+    serializer_class = StatusSerializer
+    permission_classes = (OnlyAdminOrOwner,)
+
+
 class EffectViewSet(viewsets.ModelViewSet):
     queryset = Effect.objects.all()
     serializer_class = EffectSerializer
