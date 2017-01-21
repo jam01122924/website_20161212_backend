@@ -21,9 +21,9 @@ class CharacterViewSet(viewsets.ModelViewSet):
                 "detail": "Authentication credentials were not provided."
             })
         elif not request.user.is_superuser:
-            queryset = Character.objects.filter(Q(owner=request.user))
+            queryset = [Character.objects.filter(Q(owner=request.user)).order_by('-created').first()]
         else:
-            queryset = Character.objects.all()
+            queryset = Character.objects.all().order_by('-created')
 
         serializer = CharacterSerializer(queryset, many=True, context={'request': request})
         return Response(serializer.data)
@@ -74,7 +74,7 @@ class SkillViewSet(viewsets.ModelViewSet):
 class StatusViewSet(viewsets.ModelViewSet):
     queryset = Status.objects.all()
     serializer_class = StatusSerializer
-    permission_classes = (OnlyAdminOrOwner,)
+    permission_classes = (OnlyAdminOrReadOnly,)
 
 
 class EffectViewSet(viewsets.ModelViewSet):

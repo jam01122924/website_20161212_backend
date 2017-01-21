@@ -94,11 +94,6 @@ class OldJobSerializer(serializers.ModelSerializer):
 
 class CharacterSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
-    oldJob = OldJobSerializer(read_only=True)
-    talent = TalentSerializer(read_only=True, many=True)
-    skill = SkillSerializer(read_only=True, many=True)
-    status = StatusSerializer()
-    attributes = AttributesSerializer(read_only=True)
 
     class Meta:
         model = Character
@@ -107,25 +102,26 @@ class CharacterSerializer(serializers.ModelSerializer):
 
     # def create(self, validated_data):
     #     print validated_data
-    #     character = Character(talent=validated_data['talent'],
-    #                         name=validated_data['name'],
-    #                         sex=validated_data['sex'],
-    #                         skill=validated_data['skill'],
-    #                         oldJob=validated_data['oldJob'])
-    #     character.save()
-    #     # attributes = Attributes(strength=validated_data['attributes'].strength,
-    #     #                         perception=validated_data['attributes'].perception,
-    #     #                         endurance=validated_data['attributes'].endurance,
-    #     #                         charisma=validated_data['attributes'].charisma,
-    #     #                         intelligence=validated_data['attributes'].intelligence,
-    #     #                         agility=validated_data['attributes'].agility,
-    #     #                         luck=validated_data['attributes'].luck)
-    #     # print character
-    #     # print attributes
-    #     # attributes.save()
-    #     # character.attributes = attributes
-    #     # character.save()
+    #     attributes_data = validated_data.pop('attributes', None)
+    #     status_data = validated_data.pop('status', None)
+    #     character = super(CharacterSerializer, self).create(validated_data)
+    #
+    #     super(CharacterSerializer, self).update('oldJob', validated_data['oldJob'])
+    #     super(CharacterSerializer, self).update('talent', validated_data['talent'])
+    #     super(CharacterSerializer, self).update('skill', validated_data['skill'])
+    #     self.create_or_update_attributes(character, attributes_data)
+    #     self.create_or_update_status(character, status_data)
     #     return character
+    #
+    # def create_or_update_attributes(self, character, attributes_data):
+    #     attributes, created = Attributes.objects.get_or_create(character=character, defaults=attributes_data)
+    #     if not created and attributes_data is not None:
+    #         super(AttributesSerializer, self).update(attributes, attributes_data)
+    #
+    # def create_or_update_status(self, character, status_data):
+    #     status, created = Status.objects.get_or_create(character=character, defaults=status_data)
+    #     if not created and status_data is not None:
+    #         super(StatusSerializer, self).update(status, status_data)
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):

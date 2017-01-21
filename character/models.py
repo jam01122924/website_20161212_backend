@@ -81,9 +81,9 @@ class Status(models.Model):
     thirst = models.FloatField(default=0.0)
     health = models.FloatField(default=0.0)
 
-    melee_dmg = models.IntegerField(default=0.0)
-    range_dmg = models.IntegerField(default=0.0)
-    energy_dmg = models.IntegerField(default=0.0)
+    melee_dmg = models.FloatField(default=0.0)
+    range_dmg = models.FloatField(default=0.0)
+    energy_dmg = models.FloatField(default=0.0)
 
     persuade_rate = models.FloatField(default=0.0)
     food_need = models.FloatField(default=0.0)
