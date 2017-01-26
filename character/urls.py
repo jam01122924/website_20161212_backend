@@ -57,6 +57,7 @@ user_detail = OldJobViewSet.as_view({
 router = DefaultRouter()
 router.root_view_name = 'test'
 router.register(r'character', views.CharacterViewSet)
+router.register(r'character-search', views.CharacterSearchViewSet)
 router.register(r'attributes', views.AttributesViewSet)
 router.register(r'oldjob', views.OldJobViewSet)
 router.register(r'talent', views.TalentViewSet)
@@ -71,6 +72,7 @@ urlpatterns = [
 
 routeList = (
     (r'character', views.CharacterViewSet),
+    (r'character-search', views.CharacterSearchViewSet),
     (r'attributes', views.AttributesViewSet),
     (r'oldjob', views.OldJobViewSet),
     (r'talent', views.TalentViewSet),

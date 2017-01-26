@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from rest_framework.routers import DefaultRouter
-from rest_framework_jwt.views import obtain_jwt_token
+from rest_framework_jwt.views import obtain_jwt_token, verify_jwt_token
 
 from character import urls as CharacterUrl
 from userInfo import urls as UserInfoUrl
@@ -39,4 +39,5 @@ urlpatterns = [
     url(r'^api/user-info/', include('userInfo.urls')),
     url(r'^api/api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^api/api-token-auth/', obtain_jwt_token),
+    url(r'^api/api-token-verify/', verify_jwt_token),
 ]

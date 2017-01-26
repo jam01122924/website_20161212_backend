@@ -7,6 +7,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from character.models import *
 from character.serializers import *
 from userInfo.permissions import OnlyAdminOrReadOnly, OnlyAdminOrOwner
+from character.mixins import MultipleFieldLookupMixin
 
 
 # Create your views here.
@@ -37,6 +38,22 @@ class CharacterViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
+
+
+class CharacterSearchViewSet(viewsets.ModelViewSet):
+    queryset = Character.objects.all()
+    serializer_class = CharacterSerializer
+
+    def list(self, request):
+        name = self.request.query_params.get('name', '')
+        precise = self.request.query_params.get('precise', False)
+        if precise:
+            queryset = Character.objects.filter(Q(name=name)).order_by('-created')
+        else:
+            queryset = Character.objects.filter(Q(name__icontains=name)).order_by('-created')
+        serializer = CharacterSerializer(queryset, many=True, context={'request': request})
+        return Response(serializer.data)
+
 
 
 class AttributesViewSet(viewsets.ModelViewSet):
