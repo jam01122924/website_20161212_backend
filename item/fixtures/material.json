@@ -1,0 +1,407 @@
+[
+  {
+    "model": "item.Material",
+    "pk": 10001,
+    "fields": {
+      "name": "wood I",
+      "description": "Lv 1 wood material. Can be used to craft basic tools and weapons.",
+      "type": "material",
+      "level": 1,
+      "iconUrl": "woodI"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 10002,
+    "fields": {
+      "name": "wood II",
+      "description": "Lv 2 wood material. Can be used to craft basic tools and weapons.",
+      "type": "material",
+      "level": 2
+      "iconUrl": "woodII"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 10003,
+    "fields": {
+      "name": "wood III",
+      "description": "Lv 3 wood material. Can be used to craft advanced tools and weapons.",
+      "type": "material",
+      "level": 3,
+      "iconUrl": "woodIII"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 10004,
+    "fields": {
+      "name": "wood IV",
+      "description": "Lv 4 wood material. Can be used to craft advanced tools and weapons.",
+      "type": "material",
+      "level": 4,
+      "iconUrl": "woodIV"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 10005,
+    "fields": {
+      "name": "wood V",
+      "description": "Lv 5 wood material. Can be used to craft advanced tools and weapons.",
+      "type": "material",
+      "level": 5,
+      "iconUrl": "woodV"
+    }
+  },
+
+
+
+  {
+    "model": "item.Material",
+    "pk": 10051,
+    "fields": {
+      "name": "rock I",
+      "description": "Lv 1 rock material. Can be used to craft basic tools and weapons.",
+      "type": "material",
+      "level": 1,
+      "iconUrl": "rockI"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 10052,
+    "fields": {
+      "name": "rock II",
+      "description": "Lv 2 rock material. Can be used to craft basic tools and weapons.",
+      "type": "material",
+      "level": 2,
+      "iconUrl": "rockII"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 10053,
+    "fields": {
+      "name": "rock III",
+      "description": "Lv 3 rock material. Can be used to craft advanced tools and weapons.",
+      "type": "material",
+      "level": 3,
+      "iconUrl": "rockIII"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 10054,
+    "fields": {
+      "name": "rock IV",
+      "description": "Lv 4 rock material. Can be used to craft advanced tools and weapons.",
+      "type": "material",
+      "level": 4,
+      "iconUrl": "rockIV"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 10055,
+    "fields": {
+      "name": "rock V",
+      "description": "Lv 5 rock material. Can be used to craft advanced tools and weapons.",
+      "type": "material",
+      "level": 5,
+      "iconUrl": "rockV"
+    }
+  },
+
+
+
+  {
+    "model": "item.Material",
+    "pk": 10101,
+    "fields": {
+      "name": "ore I",
+      "description": "Lv 1 ore material. Can be used to craft basic metals.",
+      "type": "material",
+      "level": 1,
+      "iconUrl": "oreI"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 10102,
+    "fields": {
+      "name": "ore II",
+      "description": "Lv 2 ore material. Can be used to craft basic metals.",
+      "type": "material",
+      "level": 2,
+      "iconUrl": "oreII"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 10103,
+    "fields": {
+      "name": "ore III",
+      "description": "Lv 3 ore material. Can be used to craft advanced metals.",
+      "type": "material",
+      "level": 3,
+      "iconUrl": "oreIII"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 10104,
+    "fields": {
+      "name": "ore IV",
+      "description": "Lv 4 ore material. Can be used to craft advanced metals.",
+      "type": "material",
+      "level": 4,
+      "iconUrl": "oreIV"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 10105,
+    "fields": {
+      "name": "ore V",
+      "description": "Lv 5 ore material. Can be used to craft advanced metals.",
+      "type": "material",
+      "level": 5,
+      "iconUrl": "oreV"
+    }
+  },
+
+
+
+  {
+    "model": "item.Material",
+    "pk": 10151,
+    "fields": {
+      "name": "metal I",
+      "description": "Lv 1 metal material. Can be used to craft basic tools and weapons.",
+      "type": "material",
+      "level": 1,
+      "iconUrl": "metalI"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 10152,
+    "fields": {
+      "name": "metal II",
+      "description": "Lv 2 metal material. Can be used to craft basic tools and weapons.",
+      "type": "material",
+      "level": 2,
+      "iconUrl": "metalII"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 10153,
+    "fields": {
+      "name": "metal III",
+      "description": "Lv 3 metal material. Can be used to craft advanced tools and weapons.",
+      "type": "material",
+      "level": 3,
+      "iconUrl": "metalIII"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 10154,
+    "fields": {
+      "name": "metal IV",
+      "description": "Lv 4 metal material. Can be used to craft advanced tools and weapons.",
+      "type": "material",
+      "level": 4,
+      "iconUrl": "metalIV"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 10155,
+    "fields": {
+      "name": "metal V",
+      "description": "Lv 5 metal material. Can be used to craft advanced tools and weapons.",
+      "type": "material",
+      "level": 5,
+      "iconUrl": "metalV"
+    }
+  },
+
+
+
+  {
+    "model": "item.Material",
+    "pk": 11151,
+    "fields": {
+      "name": "green herb I",
+      "description": "Lv 1 herb material. Can be used to craft basic potions.",
+      "type": "material",
+      "level": 1,
+      "iconUrl": "greenherbI"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 11152,
+    "fields": {
+      "name": "green herb II",
+      "description": "Lv 2 herb material. Can be used to craft basic potions.",
+      "type": "material",
+      "level": 2,
+      "iconUrl": "greenherbII"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 11153,
+    "fields": {
+      "name": "green herb III",
+      "description": "Lv 3 herb material. Can be used to craft advanced potions.",
+      "type": "material",
+      "level": 3,
+      "iconUrl": "greenherbIII"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 11154,
+    "fields": {
+      "name": "green herb IV",
+      "description": "Lv 4 herb material. Can be used to craft advanced potions.",
+      "type": "material",
+      "level": 4,
+      "iconUrl": "greenherbIV"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 11155,
+    "fields": {
+      "name": "green herb V",
+      "description": "Lv 5 herb material. Can be used to craft advanced potions.",
+      "type": "material",
+      "level": 5,
+      "iconUrl": "greenherbV"
+    }
+  },
+
+
+
+  {
+    "model": "item.Material",
+    "pk": 11201,
+    "fields": {
+      "name": "red herb I",
+      "description": "Lv 1 herb material. Can be used to craft basic potions.",
+      "type": "material",
+      "level": 1,
+      "iconUrl": "redherbI"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 11202,
+    "fields": {
+      "name": "red herb II",
+      "description": "Lv 2 herb material. Can be used to craft basic potions.",
+      "type": "material",
+      "level": 2,
+      "iconUrl": "redherbII"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 11203,
+    "fields": {
+      "name": "red herb III",
+      "description": "Lv 3 herb material. Can be used to craft advanced potions.",
+      "type": "material",
+      "level": 3,
+      "iconUrl": "redherbIII"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 11204,
+    "fields": {
+      "name": "red herb IV",
+      "description": "Lv 4 herb material. Can be used to craft advanced potions.",
+      "type": "material",
+      "level": 4,
+      "iconUrl": "redherbIV"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 11205,
+    "fields": {
+      "name": "red herb V",
+      "description": "Lv 5 herb material. Can be used to craft advanced potions.",
+      "type": "material",
+      "level": 5,
+      "iconUrl": "redherbV"
+    }
+  },
+
+
+
+  {
+    "model": "item.Material",
+    "pk": 11251,
+    "fields": {
+      "name": "blue herb I",
+      "description": "Lv 1 herb material. Can be used to craft basic potions.",
+      "type": "material",
+      "level": 1,
+      "iconUrl": "blueherbI"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 11252,
+    "fields": {
+      "name": "blue herb II",
+      "description": "Lv 2 herb material. Can be used to craft basic potions.",
+      "type": "material",
+      "level": 2,
+      "iconUrl": "blueherbII"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 11253,
+    "fields": {
+      "name": "blue herb III",
+      "description": "Lv 3 herb material. Can be used to craft advanced potions.",
+      "type": "material",
+      "level": 3,
+      "iconUrl": "blueherbIII"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 11254,
+    "fields": {
+      "name": "blue herb IV",
+      "description": "Lv 4 herb material. Can be used to craft advanced potions.",
+      "type": "material",
+      "level": 4,
+      "iconUrl": "blueherbIV"
+    }
+  },
+  {
+    "model": "item.Material",
+    "pk": 11255,
+    "fields": {
+      "name": "blue herb V",
+      "description": "Lv 5 herb material. Can be used to craft advanced potions.",
+      "type": "material",
+      "level": 5,
+      "iconUrl": "blueherbV"
+    }
+  }
+
+
+]

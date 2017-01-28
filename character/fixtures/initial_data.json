@@ -1,0 +1,664 @@
+[
+  {
+    "model": "character.OldJob",
+    "pk": 1,
+    "fields": {
+      "name": "Construction Worker",
+      "description": "Working in the construction sites makes you stronger. You can beat others easily in a melee fight. And you can carry more weight with you.",
+      "attributes": 1,
+      "talent": 1
+    }
+  },
+  {
+    "model": "character.OldJob",
+    "pk": 2,
+    "fields": {
+      "name": "Waiter/Waitress",
+      "description": "Serving so many coffees and dishes makes you move more accurate. And you can prepare food better than others.",
+      "attributes": 2,
+      "talent": 2
+    }
+  },
+  {
+    "model": "character.OldJob",
+    "pk": 3,
+    "fields": {
+      "name": "Office Worker",
+      "description": "Comparing to endless overtime work, sleeping 6 hours a day in the wild is not that exhausting for you. You have better stamina than others, and you don't sleep that much",
+      "attributes": 3,
+      "talent": 3
+    }
+  },
+  {
+    "model": "character.OldJob",
+    "pk": 4,
+    "fields": {
+      "name": "Salesman",
+      "description": "It is a talent for you to easily sale anything to anyone, even water near a river. You get advantages on sale items.",
+      "attributes": 4,
+      "talent": 4
+    }
+  },
+  {
+    "model": "character.OldJob",
+    "pk": 5,
+    "fields": {
+      "name": "Programmer",
+      "description": "You gotta be smart and well educated to be a good programmer. You learn things faster than others. And you have a better chance when hacking any computer system.",
+      "attributes": 5,
+      "talent": 5
+    }
+  },
+  {
+    "model": "character.OldJob",
+    "pk": 6,
+    "fields": {
+      "name": "Basketball Player",
+      "description": "You keep practicing basketball everyday. Now it pays you back. You move faster than others, and your fake moves make it easier to dodge attacks in a fight.",
+      "attributes": 6,
+      "talent": 6
+    }
+  },
+  {
+    "model": "character.OldJob",
+    "pk": 7,
+    "fields": {
+      "name": "Gambler",
+      "description": "Fate smiles on you. You can sense it with your nose, while other people think you are just in luck. You are more likely to do a critical hit in fights!",
+      "attributes": 7,
+      "talent": 7
+    }
+  },
+
+
+
+
+  {
+    "model": "character.Attributes",
+    "pk": 1,
+    "fields": {
+      "strength": 7,
+      "perception": 2,
+      "endurance": 5,
+      "charisma": 1,
+      "intelligence": 4,
+      "agility": 4,
+      "luck": 2
+    }
+  },
+  {
+    "model": "character.Attributes",
+    "pk": 2,
+    "fields": {
+      "strength": 3,
+      "perception": 7,
+      "endurance": 3,
+      "charisma": 5,
+      "intelligence": 1,
+      "agility": 4,
+      "luck": 2
+    }
+  },
+  {
+    "model": "character.Attributes",
+    "pk": 3,
+    "fields": {
+      "strength": 2,
+      "perception": 3,
+      "endurance": 7,
+      "charisma": 3,
+      "intelligence": 5,
+      "agility": 3,
+      "luck": 2
+    }
+  },
+  {
+    "model": "character.Attributes",
+    "pk": 4,
+    "fields": {
+      "strength": 2,
+      "perception": 2,
+      "endurance": 4,
+      "charisma": 7,
+      "intelligence": 5,
+      "agility": 1,
+      "luck": 4
+    }
+  },
+  {
+    "model": "character.Attributes",
+    "pk": 5,
+    "fields": {
+      "strength": 1,
+      "perception": 3,
+      "endurance": 6,
+      "charisma": 1,
+      "intelligence": 7,
+      "agility": 4,
+      "luck": 3
+    }
+  },
+  {
+    "model": "character.Attributes",
+    "pk": 6,
+    "fields": {
+      "strength": 3,
+      "perception": 6,
+      "endurance": 5,
+      "charisma": 1,
+      "intelligence": 1,
+      "agility": 7,
+      "luck": 2
+    }
+  },
+  {
+    "model": "character.Attributes",
+    "pk": 7,
+    "fields": {
+      "strength": 1,
+      "perception": 5,
+      "endurance": 2,
+      "charisma": 5,
+      "intelligence": 2,
+      "agility": 3,
+      "luck": 7
+    }
+  },
+
+
+
+
+
+
+  {
+    "model": "character.Talent",
+    "pk": 1,
+    "fields": {
+      "name": "Strong Carrier",
+      "description": "The bag is always too small for you. +30kg carry weight",
+      "effect": ["Talent_0001"]
+    }
+  },
+  {
+    "model": "character.Talent",
+    "pk": 2,
+    "fields": {
+      "name": "Chef Recommended",
+      "description": "You have a talent in cooking. You get 20% more benefit from food",
+      "effect": ["Talent_0002"]
+    }
+  },
+  {
+    "model": "character.Talent",
+    "pk": 3,
+    "fields": {
+      "name": "Fast Sleeper",
+      "description": "1 Mississippi 2 Mississippi 3 Mississzzzzzzzz... You recover 20% faster from sleep",
+      "effect": ["Talent_0003"]
+    }
+  },
+  {
+    "model": "character.Talent",
+    "pk": 4,
+    "fields": {
+      "name": "Cruel Bargainer",
+      "description": "You always can take advantages from buy and sale. You gain 10% coins from selling stuff.",
+      "effect": ["Talent_0004"]
+    }
+  },
+  {
+    "model": "character.Talent",
+    "pk": 5,
+    "fields": {
+      "name": "Hacker",
+      "description": "Hack into the National Food Storage System? 1, 2, 3, and done! You gain 20% more chance to successfully hack into any computer system.",
+      "effect": ["Talent_0005"]
+    }
+  },
+  {
+    "model": "character.Talent",
+    "pk": 6,
+    "fields": {
+      "name": "Cat Reflexes",
+      "description": "You move fast like a cat! You gain 5% more chance to dodge attacks.",
+      "effect": ["Talent_0006"]
+    }
+  },
+  {
+    "model": "character.Talent",
+    "pk": 7,
+    "fields": {
+      "name": "Lucky shoot",
+      "description": "I didn't mean to, but it just happened! You gain 5% more chance to do a critical hit.",
+      "effect": ["Talent_0007"]
+    }
+  },
+
+
+
+
+
+
+
+
+
+    {
+    "model": "character.Skill",
+    "pk": 1,
+    "fields": {
+      "name": "Melee Weapon I",
+      "description": "Basic Training of melee weapon. +25% melee weapons damage and +10% hit rate.",
+      "requiredLv": 1,
+      "requiredSkill": [],
+      "effect": ["Skill_0001_1_Level_1", "Skill_0001_2_Level_1"]
+    }
+  },
+  {
+    "model": "character.Skill",
+    "pk": 2,
+    "fields": {
+      "name": "Melee Weapon II",
+      "description": "Advanced Training of melee weapon. +50% melee weapons damage and +20% hit rate.",
+      "requiredLv": 6,
+      "requiredSkill": ["Melee Weapon I"],
+      "effect": ["Skill_0001_1_Level_2", "Skill_0001_2_Level_2"]
+    }
+  },
+  {
+    "model": "character.Skill",
+    "pk": 3,
+    "fields": {
+      "name": "Melee Weapon III",
+      "description": "Expert Training of melee weapon. +75% melee weapons damage and +30% hit rate.",
+      "requiredLv": 11,
+      "requiredSkill": ["Melee Weapon II"],
+      "effect": ["Skill_0001_1_Level_3", "Skill_0001_2_Level_3"]
+    }
+  },
+  {
+    "model": "character.Skill",
+    "pk": 4,
+    "fields": {
+      "name": "Melee Weapon IV",
+      "description": "Master Training of melee weapon. +100% melee weapons damage and +40% hit rate.",
+      "requiredLv": 16,
+      "requiredSkill": ["Melee Weapon III"],
+      "effect": ["Skill_0001_1_Level_4", "Skill_0001_2_Level_4"]
+    }
+  },
+  {
+    "model": "character.Skill",
+    "pk": 5,
+    "fields": {
+      "name": "Melee Weapon V",
+      "description": "Ultra Training of melee weapon. +120% melee weapons damage, +50% hit rate, and 20% chance to melee attack again immediately.",
+      "requiredLv": 21,
+      "requiredSkill": ["Melee Weapon IV"],
+      "effect": ["Skill_0001_1_Level_5", "Skill_0001_2_Level_5", "Skill_0001_3_Level_1"]
+    }
+  },
+
+
+
+  {
+    "model": "character.Skill",
+    "pk": 21,
+    "fields": {
+      "name": "Light Gun I",
+      "description": "Basic Training of pistol and uzi. +25% damage and +10% hit rate.",
+      "requiredLv": 1,
+      "requiredSkill": [],
+      "effect": ["Skill_0002_1_Level_1", "Skill_0002_2_Level_1"]
+    }
+  },
+  {
+    "model": "character.Skill",
+    "pk": 22,
+    "fields": {
+      "name": "Light Gun II",
+      "description": "Advance Training of pistol and uzi. +50% damage and +20% hit rate.",
+      "requiredLv": 5,
+      "requiredSkill": ["Light Gun I"],
+      "effect": ["Skill_0002_1_Level_2", "Skill_0002_2_Level_2"]
+    }
+  },
+  {
+    "model": "character.Skill",
+    "pk": 23,
+    "fields": {
+      "name": "Light Gun III",
+      "description": "Expert Training of pistol and uzi. +75% damage and +30% hit rate.",
+      "requiredLv": 9,
+      "requiredSkill": ["Light Gun II"],
+      "effect": ["Skill_0002_1_Level_3", "Skill_0002_2_Level_3"]
+    }
+  },
+  {
+    "model": "character.Skill",
+    "pk": 24,
+    "fields": {
+      "name": "Light Gun IV",
+      "description": "Master Training of pistol and uzi. +100% damage and +40% hit rate.",
+      "requiredLv": 13,
+      "requiredSkill": ["Light Gun III"],
+      "effect": ["Skill_0002_1_Level_4", "Skill_0002_2_Level_4"]
+    }
+  },
+  {
+    "model": "character.Skill",
+    "pk": 25,
+    "fields": {
+      "name": "Light Gun V",
+      "description": "Ultra Training of pistol and uzi. +120% damage, +50% hit rate, and 20% chance to fire again immediately.",
+      "requiredLv": 17,
+      "requiredSkill": ["Light Gun IV"],
+      "effect": ["Skill_0002_1_Level_5", "Skill_0002_2_Level_5", "Skill_0002_3_Level_1"]
+    }
+  },
+
+
+
+  {
+    "model": "character.Effect",
+    "pk": 1,
+    "fields": {
+      "id": "Talent_0001",
+      "field": "carry_weight_buff",
+      "value": 10,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 2,
+    "fields": {
+      "id": "Talent_0002",
+      "field": "food_buff",
+      "value": 0.2,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 3,
+    "fields": {
+      "id": "Talent_0003",
+      "field": "sleep_buff",
+      "value": 0.2,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 4,
+    "fields": {
+      "id": "Talent_0004",
+      "field": "sale_buff",
+      "value": 0.1,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 5,
+    "fields": {
+      "id": "Talent_0005",
+      "field": "hack_buff",
+      "value": 0.2,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 6,
+    "fields": {
+      "id": "Talent_0006",
+      "field": "dodge_buff",
+      "value": 5,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 7,
+    "fields": {
+      "id": "Talent_0007",
+      "field": "critical_buff",
+      "value": 5,
+      "type": "plus"
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "model": "character.Effect",
+    "pk": 10001,
+    "fields": {
+      "id": "Skill_0001_1_Level_1",
+      "field": "melee_weapon_dmg_buff",
+      "value": 0.25,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10002,
+    "fields": {
+      "id": "Skill_0001_2_Level_1",
+      "field": "melee_weapon_hitRate_buff",
+      "value": 0.1,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10003,
+    "fields": {
+      "id": "Skill_0001_1_Level_2",
+      "field": "melee_weapon_dmg_buff",
+      "value": 0.5,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10004,
+    "fields": {
+      "id": "Skill_0001_2_Level_2",
+      "field": "melee_weapon_hitRate_buff",
+      "value": 0.2,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10005,
+    "fields": {
+      "id": "Skill_0001_1_Level_3",
+      "field": "melee_weapon_dmg_buff",
+      "value": 0.75,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10006,
+    "fields": {
+      "id": "Skill_0001_2_Level_3",
+      "field": "melee_weapon_hitRate_buff",
+      "value": 0.3,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10007,
+    "fields": {
+      "id": "Skill_0001_1_Level_4",
+      "field": "melee_weapon_dmg_buff",
+      "value": 1,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10008,
+    "fields": {
+      "id": "Skill_0001_2_Level_4",
+      "field": "melee_weapon_hitRate_buff",
+      "value": 0.4,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10009,
+    "fields": {
+      "id": "Skill_0001_1_Level_5",
+      "field": "melee_weapon_dmg_buff",
+      "value": 1.2,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10010,
+    "fields": {
+      "id": "Skill_0001_2_Level_5",
+      "field": "melee_weapon_hitRate_buff",
+      "value": 0.5,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10011,
+    "fields": {
+      "id": "Skill_0001_3_Level_1",
+      "field": "melee_weapon_hitTimes_buff",
+      "value": 0.2,
+      "type": "plus"
+    }
+  },
+
+
+
+  {
+    "model": "character.Effect",
+    "pk": 10021,
+    "fields": {
+      "id": "Skill_0002_1_Level_1",
+      "field": "range_weapon_dmg_buff",
+      "value": 0.25,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10022,
+    "fields": {
+      "id": "Skill_0002_2_Level_1",
+      "field": "range_weapon_hitRate_buff",
+      "value": 0.1,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10023,
+    "fields": {
+      "id": "Skill_0002_1_Level_2",
+      "field": "range_weapon_dmg_buff",
+      "value": 0.5,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10024,
+    "fields": {
+      "id": "Skill_0002_2_Level_2",
+      "field": "range_weapon_hitRate_buff",
+      "value": 0.2,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10025,
+    "fields": {
+      "id": "Skill_0002_1_Level_3",
+      "field": "range_weapon_dmg_buff",
+      "value": 0.75,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10026,
+    "fields": {
+      "id": "Skill_0002_2_Level_3",
+      "field": "range_weapon_hitRate_buff",
+      "value": 0.3,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10027,
+    "fields": {
+      "id": "Skill_0002_1_Level_4",
+      "field": "range_weapon_dmg_buff",
+      "value": 1,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10028,
+    "fields": {
+      "id": "Skill_0002_2_Level_4",
+      "field": "range_weapon_hitRate_buff",
+      "value": 0.4,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10029,
+    "fields": {
+      "id": "Skill_0002_1_Level_5",
+      "field": "range_weapon_dmg_buff",
+      "value": 1.2,
+      "type": "times"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10030,
+    "fields": {
+      "id": "Skill_0002_2_Level_5",
+      "field": "range_weapon_hitRate_buff",
+      "value": 0.5,
+      "type": "plus"
+    }
+  },
+  {
+    "model": "character.Effect",
+    "pk": 10031,
+    "fields": {
+      "id": "Skill_0002_3_Level_1",
+      "field": "range_weapon_hitTimes_buff",
+      "value": 0.2,
+      "type": "plus"
+    }
+  }
+]
